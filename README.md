@@ -5,7 +5,7 @@
 2. [Data Sources](#data-sources)
 3. [Tools Used](#tools-used)
 4. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-5. [Exploratory Data Analysis](#explorratory-data-analysis)
+5. [Exploratory Data Analysis](#exploratory-data-analysis)
 6. [Data Analysis](#data-analysis)
 7. [Data Visualization](#data-visualization)
 
@@ -18,11 +18,11 @@
 - SQL: For data manipulation, data retrieval and data analysis
 - PoweBI:  Data analysis, visualization and storytelling
 
-## Data Cleaning and Preparation
+### Data Cleaning and Preparation
 - Data loading and inspection
 - Data cleaning
 
-## EXPLORATORY DATA ANALYSIS
+### EXPLORATORY DATA ANALYSIS
 - What is the total sales for each product category?
 - What is the number of sales transactions in each region.
 - Find the highest-selling product by total sales value.
@@ -32,10 +32,10 @@
 - Calculate the percentage of total sales contributed by each region.
 - Identify products with no sales in the last quarter
   
-## DATA ANALYSIS
+### DATA ANALYSIS
 - What is the total sales for each product category?
 
-  ```SQL
+  ```
     ALTER TABLE [dbo].[LITA Capstone Dataset 1]
     ADD Total_Sales int
 
@@ -43,13 +43,13 @@
     SET Total_Sales = Quantity * UnitPrice
 
     SELECT Product, Sum(Total_Sales) AS Total_Sales FROM [dbo].[LITA Capstone Dataset 1]
-    GROUP BY Product
-```
+    GROUP BY Product ```
+
 
 - What is the number of sales transactions in each region.
 
 ```
-    SELECT Region, COUNT(*) AS Number_of_Sales_Per_Region 
+SELECT Region, COUNT(*) AS Number_of_Sales_Per_Region 
     FROM [dbo].[LITA Capstone Dataset 1]
     GROUP BY Region
 ```
@@ -101,7 +101,5 @@
   ```
       SELECT [Product] FROM [dbo].[LITA Capstone Dataset 2] 
       WHERE [Product] NOT IN(
-      SELECT [Product] FROM [dbo].[LITA Capstone Dataset 1] WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE()))
-```
-
-## Data Visualization
+      SELECT [Product] FROM [dbo].[LITA Capstone Dataset 1] WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())) ```
+### Data Visualization
