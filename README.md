@@ -1,4 +1,4 @@
-# PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
+## PROJECT TITLE: SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
 
 ### PROJECT OUTLINE
 1. [Project Overview](#project-overview)
@@ -8,10 +8,12 @@
 5. [Exploratory Data Analysis](#exploratory-data-analysis)
 6. [Data Analysis](#data-analysis)
 7. [Data Visualization](#data-visualization)
+8. [Inferences](#inferences)
+9. [Conclusion](#conclusion)
+10. [Limitations](#limitations)
 
 ### Project Overview
-
-### DATA SOURCES
+In this project, I analyzed the sales performance of a retail store to discover top-selling products, regional performance of products and sales trends.
 
 ### TOOLS USED
 - Microsoft Excel: For ddata cleaning, creating pivot tables and charts
@@ -43,9 +45,8 @@
     SET Total_Sales = Quantity * UnitPrice
 
     SELECT Product, Sum(Total_Sales) AS Total_Sales FROM [dbo].[LITA Capstone Dataset 1]
-    GROUP BY Product ```
-
-
+    GROUP BY Product
+   ```
 - What is the number of sales transactions in each region.
 
 ```
@@ -90,7 +91,8 @@ SELECT Region, COUNT(*) AS Number_of_Sales_Per_Region
 - Calculate the percentage of total sales contributed by each region.
 
 ```
-    SELECT Region, SUM(Total_Sales) AS Sales_Per_Region, (SUM(Total_Sales)*1.0 /(SELECT SUM(Total_Sales) FROM [dbo].[LITA Capstone Dataset1]))*100 AS Percentage_of_Total_Sales
+    SELECT Region, SUM(Total_Sales) AS Sales_Per_Region, (SUM(Total_Sales)*1.0 /(SELECT SUM(Total_Sales)
+    FROM [dbo].[LITA Capstone Dataset1]))*100 AS Percentage_of_Total_Sales
     FROM [dbo].[LITA Capstone Dataset 1]
     GROUP BY Region
     ORDER BY Sales_Per_Region DESC
@@ -101,5 +103,14 @@ SELECT Region, COUNT(*) AS Number_of_Sales_Per_Region
   ```
       SELECT [Product] FROM [dbo].[LITA Capstone Dataset 2] 
       WHERE [Product] NOT IN(
-      SELECT [Product] FROM [dbo].[LITA Capstone Dataset 1] WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE())) ```
+      SELECT [Product] FROM [dbo].[LITA Capstone Dataset 1] WHERE OrderDate >= DATEADD(MONTH, -3, GETDATE()))
+   ```
 ### Data Visualization
+
+
+
+### Inferences
+
+### Conclusion
+
+### Limitations
