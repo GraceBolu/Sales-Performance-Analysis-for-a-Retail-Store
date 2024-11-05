@@ -2,15 +2,14 @@
 
 ### PROJECT OUTLINE
 1. [Project Overview](#project-overview)
-2. [Data Sources](#data-sources)
-3. [Tools Used](#tools-used)
-4. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-5. [Exploratory Data Analysis](#exploratory-data-analysis)
-6. [Data Analysis](#data-analysis)
-7. [Data Visualization](#data-visualization)
-8. [Inferences](#inferences)
-9. [Conclusion](#conclusion)
-10. [Limitations](#limitations)
+2. [Tools Used](#tools-used)
+3. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+4. [Exploratory Data Analysis](#exploratory-data-analysis)
+5. [Data Analysis](#data-analysis)
+6. [Data Visualization](#data-visualization)
+7. [Inferences](#inferences)
+8. [Conclusion](#conclusion)
+9. [Limitations](#limitations)
 
 ### Project Overview
 In this project, I analyzed the sales performance of a retail store to discover top-selling products, regional performance of products and sales trends.
