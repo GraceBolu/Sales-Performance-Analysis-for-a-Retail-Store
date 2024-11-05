@@ -108,6 +108,8 @@ SELECT Region, COUNT(*) AS Number_of_Sales_Per_Region
 
 ![](Dashboard/Dashboard Page 1.PNG)
 
+![](Dashboard/Dashboard Page 2.PNG)
+
 ### Inferences
 
 ### Conclusion
